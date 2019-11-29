@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 public class View {
     static Locale locale = new Locale("ua", "UA");
     public static final ResourceBundle resourceBundle =
-            ResourceBundle.getBundle("messages");
+            ResourceBundle.getBundle("messages", locale);
 
     public void printMessage(String major_msg){
         System.out.println(major_msg);
